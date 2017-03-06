@@ -13,7 +13,7 @@ var yaml = require('js-yaml');
 var fs   = require('fs');
 
 module.exports = function(grunt) {
-  grunt.registerMultiTask('grunt-generate-sass-imports', 'Glob functionality for loading Sass partials based on directory structure', function() {
+  grunt.registerMultiTask('generate_sass_imports', 'Glob functionality for loading Sass partials based on directory structure', function() {
     var allowedExtensions = ['.scss'];
     const target = this.target;
     const files = this.files
@@ -83,8 +83,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerMultiTask('generateSassImports', 'Glob functionality for loading Sass partials based on directory structure', function () {
-    grunt.config.set('grunt_generate_sass_imports', grunt.config.get('generateSassImports'));
-    grunt.task.run('grunt_generate_sass_imports');
+    grunt.config.set('generate_sass_imports', grunt.config.get('generateSassImports'));
+    grunt.task.run('generate_sass_imports');
   });
 
 };

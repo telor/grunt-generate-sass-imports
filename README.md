@@ -25,14 +25,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-generate-sass-imports');
 ```
 
-## The "grunt_generate_sass_imports" task
+## The "generate_sass_imports" task
 
 ### Overview
-In your project's Gruntfile, add a section named `grunt_generate_sass_imports` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `generate_sass_imports` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-grunt_generate_sass_imports: {
+generate_sass_imports: {
   options: {
     configBase: '/path/to/the/sass/filedir/you/want/to/generate/'
   },
