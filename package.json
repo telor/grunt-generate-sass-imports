@@ -1,0 +1,44 @@
+{
+  "name": "grunt-generate-sass-imports",
+  "description": "Glob functionality for loading Sass partials based on directory structure",
+  "version": "0.0.1",
+  "homepage": "https://github.com/telor/grunt-generate-sass-imports",
+  "author": {
+    "name": "Thorsten Schau",
+    "email": "letsgo@codeho.net",
+    "url": "http://codeho.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:telor/grunt-generate-sass-imports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telor/grunt-generate-sass-imports/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/telor/grunt-generate-sass-imports/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 2.0.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5",
+    "js-yaml": "*",
+    "fs": "*"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
