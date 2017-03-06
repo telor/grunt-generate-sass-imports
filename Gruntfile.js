@@ -16,14 +16,14 @@ module.exports = function(grunt) {
 
    generate_sass_imports: {
       options: {
-        configBase: '<%= paths.src %>/shared/includes'
+        configBase: '/shared/includes'
       },
       my_target: {
         files: [
           {
             expand: true,
-            src: ['/includes/atoms/**/scss/*.scss'],
-            dest: '/includes/atoms/atoms_x.scss',
+            src: ['/includes/partials/**/scss/*.scss'],
+            dest: '/includes/partials/partials_x.scss',
             ext: '.css',
             filter: function (file) {
               var pattern = new RegExp(/\/(.+)\/scss\/_?(\1)\.scss/g);
