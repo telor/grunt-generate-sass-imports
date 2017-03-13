@@ -1,7 +1,7 @@
 {
   "name": "grunt-generate-sass-imports",
   "description": "Glob functionality for loading Sass partials based on directory structure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/telor/grunt-generate-sass-imports",
   "author": {
     "name": "Thorsten Schau",

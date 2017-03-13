@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 
     function configCheckIsActive(this_file) {
       try {
-        var doc = yaml.safeLoad(fs.readFileSync(options.configBase+'/'+target+'/'+this_file.folder+'/'+this_file.folder+'.yaml', 'utf8'));
+        var doc = yaml.safeLoad(fs.readFileSync(options.configBase+'/'+target+'/'+this_file.folder+'/config.yaml', 'utf8'));
         if(doc.active && doc.active === true) {
           return true;
         }else{

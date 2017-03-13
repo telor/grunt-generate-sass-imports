@@ -24,9 +24,8 @@ module.exports = function(grunt) {
             expand: true,
             src: ['/includes/partials/**/scss/*.scss'],
             dest: '/includes/partials/partials_x.scss',
-            ext: '.css',
             filter: function (file) {
-              var pattern = new RegExp(/\/(.+)\/scss\/_?(\1)\.scss/g);
+              var pattern = /\/(.+)\/scss\/_?(\1)\.scss/g;
               return pattern.test(file);
             }
 
